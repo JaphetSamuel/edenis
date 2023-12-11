@@ -10,7 +10,7 @@
     <!-- Mobile Specific Metas
   ================================================== -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Construction Html5 Template">
+    <meta name="description" content="Edenis groupe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
     <!-- Favicon
@@ -30,8 +30,20 @@
     <link rel="stylesheet" href="plugins/slick/slick-theme.css">
     <!-- Colorbox -->
     <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+    
     <!-- Template styles-->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+
+        }
+    </style>
+    @livewireStyles
 
 </head>
 <body>
@@ -69,6 +81,9 @@
     <!-- Javascript Files
     ================================================== -->
 
+    @livewireScripts
+
+
     <!-- initialize jQuery Library -->
     <script src="plugins/jQuery/jquery.min.js"></script>
     <!-- Bootstrap jQuery -->
@@ -89,6 +104,16 @@
 
     <!-- Template custom -->
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="plugins/lessmore.js">
+
+    <script>
+
+      $(function(){
+    $('.dolessmore').dolessmore({
+      lHeight : 10
+      });
+    });
+    </script>
 
 </div><!-- Body inner end -->
 </body>
